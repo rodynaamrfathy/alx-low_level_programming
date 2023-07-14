@@ -11,20 +11,20 @@
  */
 int main(void)
 {
-	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
+    char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+    int i = 0;
 
-	while (alpha[i] != '\0')
-	{
-		if (alpha[i] == 'q')
-			continue;
-		if (alpha[i] == 'e')
-			continue;
-		putchar(alpha[i]);
-		i++;
-	}
+    while (alpha[i] != '\0')
+    {
+        if (alpha[i] == 'q')
+            continue;
+        if (alpha[i] == 'e')
+            continue;
+        putchar(alpha[i]);
+        i++;
+    }
 
-	putchar('\n');
+    putchar('\n');
 
-	return (0);
+    return (0);
 }
