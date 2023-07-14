@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * main - Enter point
+ * main - Entry point
  *
  * Description: Prints the lowercase alphabet letters from 'a' to 'z',
  *              in reverse.
@@ -11,16 +11,16 @@
  */
 int main(void)
 {
-        char alpha[] = "abcdefghijklmnopqrstuvwxyz";
-        int i = 25;
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+	int i = 25;
 
-        while (i >= 0)
-        {
-                putchar(alpha[i]);
-                i--;
-        }
+	while (i >= 0)
+	{
+		putchar(alpha[i]);
+		i--;
+	}
 
-        putchar('\n');
+	putchar('\n');
 
-return (0);
+	return (0);
 }
