@@ -5,7 +5,8 @@
 /**
  * main - Entry point
  *
- * Description: This program generates a random number 'n', extracts its last digit,
+ * Description: This program generates a random number 'n',
+ *              extracts its last digit,
  *              and checks whether the last digit is greater than 5,
  *              equal to zero, or less than zero.
  *
