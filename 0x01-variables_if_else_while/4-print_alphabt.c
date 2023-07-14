@@ -11,17 +11,15 @@
  */
 int main(void)
 {
-    char alpha[] = "abcdefghijklmnopqrstuvwxyz";
-    int i = 0;
+    char ch = 'a';
 
-    while (alpha[i] != '\0')
+    while (ch <= 'z')
     {
-        if (alpha[i] == 'q')
-            continue;
-        if (alpha[i] == 'e')
-            continue;
-	i++;
-        putchar(alpha[i]);
+        if (ch != 'q' && ch != 'e')
+        {
+            putchar(ch);
+        }
+        ch++;
     }
 
     putchar('\n');
