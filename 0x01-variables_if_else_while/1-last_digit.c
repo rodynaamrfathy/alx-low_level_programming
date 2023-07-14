@@ -6,9 +6,9 @@
  *
  * main - Enter Point
  *
- * Description: Randomly generates 'n'
- * and takes last digit, and checks if it is more than 5, equal zero,
- * less than zero
+ * Description: Randomly generates a number 'n' and extracts its last digit.
+ * It then checks if the last digit is greater than 5, equal to zero,
+ * or less than zero
  *
  * Return: 0 (Success)
  */
