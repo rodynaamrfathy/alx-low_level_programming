@@ -5,7 +5,8 @@
 /**
  * main - Entry point
  *
- * Description: Randomly generates a number 'n' and determines whether it is positive, zero, or negative.
+ * Description: Randomly generates a number 'n' and determines whether it is positive,
+ * zero, or negative.
  *
  * Return: 0 (Success)
  */
