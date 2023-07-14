@@ -3,12 +3,11 @@
 #include <stdlib.h>
 
 /**
+ * main - Entry point
  *
- * main - Enter Point
- *
- * Description: Randomly generates a number 'n' and extracts its last digit.
- * It then checks if the last digit is greater than 5, equal to zero,
- * or less than zero
+ * Description: This program generates a random number 'n', extracts its last digit,
+ *              and checks whether the last digit is greater than 5, equal to zero,
+ *              or less than zero.
  *
  * Return: 0 (Success)
  */
