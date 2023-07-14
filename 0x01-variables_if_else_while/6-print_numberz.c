@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Enter point
+ * main - Entry point
  *
- * Description: Prints numbers from '0' to '9' .
+ * Description: Prints numbers from '0' to '9' using putchar.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-        int i = 0;
+	int i = 0;
 
-        while (i < 10)
-        {
-                putchar('0' + i);
-                i++;
-        }
+	while (i < 10)
+	{
+		putchar('0' + i);
+		i++;
+	}
 
-        putchar('\n');
+	putchar('\n');
 
-        return (0);
+	return (0);
 }
