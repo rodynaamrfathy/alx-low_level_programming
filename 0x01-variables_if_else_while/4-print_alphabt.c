@@ -21,7 +21,7 @@ int main(void)
         if (alpha[i] == 'e')
             continue;
         putchar(alpha[i]);
-        i++;
+	i++;
     }
 
     putchar('\n');
