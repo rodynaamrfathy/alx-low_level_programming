@@ -2,7 +2,6 @@
 #include <string.h>
 
 /**
- *
  * main - Enter point
  *
  * Description: Prints the lowercase alphabet letters from 'a' to 'z'.
