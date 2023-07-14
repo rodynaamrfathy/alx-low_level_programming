@@ -5,9 +5,9 @@
  *
  * main - Enter point
  *
- * Description: This program prints all the lower case alphabets. 
+ * Description: Prints the lowercase alphabet letters from 'a' to 'z'.
  *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
