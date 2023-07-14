@@ -20,8 +20,8 @@ int main(void)
             continue;
         if (alpha[i] == 'e')
             continue;
-        putchar(alpha[i]);
 	i++;
+        putchar(alpha[i]);
     }
 
     putchar('\n');
