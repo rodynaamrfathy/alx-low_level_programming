@@ -11,25 +11,25 @@
  */
 int main(void)
 {
-    char lowercase[] = "abcdefghijklmnopqrstuvwxyz";
-    char uppercase[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    int i = 0;
+	char lowercase[] = "abcdefghijklmnopqrstuvwxyz";
+	char uppercase[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i = 0;
 
-    while (lowercase[i] != '\0')
-    {
-        putchar(lowercase[i]);
-        i++;
-    }
+	while (lowercase[i] != '\0')
+	{
+		putchar(lowercase[i]);
+		i++;
+	}
 
-    i = 0;
+	i = 0;
 
-    while (uppercase[i] != '\0')
-    {
-        putchar(uppercase[i]);
-        i++;
-    }
+	while (uppercase[i] != '\0')
+	{
+		putchar(uppercase[i]);
+		i++;
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
