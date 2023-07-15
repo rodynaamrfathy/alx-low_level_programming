@@ -5,43 +5,42 @@
  *
  * Description: Prints all possible combinations of three-digit numbers
  *              separated by ", " with the smallest combination only.
+ *              ASCII codes are used.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int i = 48;
+	int i = 48;
+	int j = 48;
+	int k = 48;
 
-    while (i <= 55)
-    {
-        int j = i + 1;
+	while (i <= 55)
+	{
+		j = i + 1;
+		while (j <= 56)
+		{
+			k = j + 1;
+			while (k <= 57)
+			{
+				putchar(i);
+				putchar(j);
+				putchar(k);
 
-        while (j <= 56)
-        {
-            int k = j + 1;
+				if (i != 55 || j != 56 || k != 57)
+				{
+					putchar(44); /* comma */
+					putchar(32); /* space */
+				}
 
-            while (k <= 57)
-            {
-                putchar(i);
-                putchar(j);
-                putchar(k);
+				k++;
+			}
+			j++;
+		}
+		i++;
+	}
 
-                if (i != 55)
-                {
-                    putchar(',');
-                    putchar(' ');
-                }
+	putchar('\n');
 
-                k++;
-            }
-
-            j++;
-        }
-
-        i++;
-    }
-
-    putchar('\n');
-
-    return (0);
+	return (0);
 }
