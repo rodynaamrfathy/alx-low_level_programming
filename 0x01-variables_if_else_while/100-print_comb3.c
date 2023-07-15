@@ -28,6 +28,7 @@ int main(void)
 			}
 			j++;
 		}
+		j = 48;
 		i++;
 	}
 
