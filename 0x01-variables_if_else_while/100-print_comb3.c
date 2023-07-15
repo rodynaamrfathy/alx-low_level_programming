@@ -9,19 +9,19 @@
  */
 int main(void)
 {
-	int i = 0;
-	int j = 0;
+	int i = 48;
+	int j = 48;
 
-	while (i<= 9)
+	while (i<= 57)
 	{
-		while (j <= 9)
+		while (j <= 57)
 		{
 			if(i < j)
 			{
 				putchar(i);
 				putchar(j);
 			}
-			if(i != 8 && j != 9)
+			if(i != 56 && j != 57)
 			{
 				putchar(',');
 				putchar(' ');
