@@ -1,19 +1,16 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main -Entry point
  *
  * Description:
  *
- * Return: always 0 (Success)
+ * Return: always 1 (Error)
  */
-int main(void)
+int main(void)      
 {
-	char str[]="and that piece of art is useful" - Dora Korpar, 2015-10-19,";
-	int i=0;
-	while(str[i] != '\0')
-	{
-		putchar(str[i])
-		i++;
-	}
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	
+	return (1);
 }
