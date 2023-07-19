@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * print_alphabet - the function  prints the alphabet, in lowercase, followed
  * by a new line, using _putchar 
