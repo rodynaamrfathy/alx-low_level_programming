@@ -1,16 +1,16 @@
 #include <unistd.h>
 #include "main.h"
 
-/**
- * main - Entry Point
- *
- * Description:
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+void print_alphabet(void)
 {
-	 print_alphabet();
+    char c[] = "abcdefghijklmnopqrstuvwxyz";
+    int i = 0;
 
-	 return (0);
+    while (c[i] != '\0')
+    {
+        _putchar(c[i]);
+        i++;
+    }
+
+    _putchar('\n');
 }
