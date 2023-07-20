@@ -7,17 +7,11 @@
  */
 void print_alphabet_x10(void)
 {
-	char c[] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
 	int j = 0;
 
 	while (j < 10)
 	{
-		while (c[i] != '\0')
-		{
-			_putchar(c[i]);
-			i++;
-		}
+		print_alphabet();
 		_putchar('\n');
 		j++;
 	}
