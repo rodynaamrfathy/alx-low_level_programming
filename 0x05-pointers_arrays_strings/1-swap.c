@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * swap_int -  a function that swaps the values of two integers
- * @a:is a pointer to an integer 
- * @b:is a pointer to an integer
+ * swap_int -  a function that swaps the values of two integers.
+ * @a: is a pointer to an integer.
+ * @b: is a pointer to an integer.
  *
  * Return: doesn't return any thing
  */
