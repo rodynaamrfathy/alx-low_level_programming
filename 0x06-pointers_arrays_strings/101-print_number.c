@@ -9,18 +9,32 @@
 void print_number(int n)
 {
 	char c;
-	int temp = 0;
+	int temp = (n < 0) ? -n : n;
+	int reversed = 0;
 
 	if (n < 0)
 	{
 		_putchar('-');
 	}
-	
-	while (temp > 0 && temp < 1)
+
+	if (temp == 0)
 	{
-		temp = n % 10;
-		n /= 10;
+		_putchar('0');
+	}
+
+	while (temp != 0)
+	{
+		reversed = reversed * 10 + temp % 10;
+		temp /= 10;
+	}
+
+	temp = 0;
+
+	while (reversed != 0)
+	{
+		temp = reversed % 10;
 		c = '0' + temp;
 		_putchar(c);
+		reversed /= 10;
 	}
 }
