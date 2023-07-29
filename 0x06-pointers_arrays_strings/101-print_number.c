@@ -20,6 +20,7 @@ void print_number(int n)
 	if (temp == 0)
 	{
 		_putchar('0');
+		return;
 	}
 
 	while (temp != 0)
@@ -27,8 +28,6 @@ void print_number(int n)
 		reversed = reversed * 10 + temp % 10;
 		temp /= 10;
 	}
-
-	temp = 0;
 
 	while (reversed != 0)
 	{
