@@ -11,7 +11,7 @@ int print_last_digit(int n)
 	int digit;
 
 	digit = n % 10;
-	_abs(digit);
+	digit = (n < 0) ? -digit : digit;
 	_putchar('0' + digit);
 
 	return (digit);
