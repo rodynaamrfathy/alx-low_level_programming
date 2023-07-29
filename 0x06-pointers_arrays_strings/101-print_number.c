@@ -17,12 +17,6 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	if (temp == 0)
-	{
-		_putchar('0');
-		return;
-	}
-
 	while (temp != 0)
 	{
 		reversed = reversed * 10 + temp % 10;
