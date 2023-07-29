@@ -11,6 +11,7 @@ char *rot13(char *str)
 	int j;
 	char main[] = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 	char rot13[] = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
+	char *ptr = str;
 
 	while (*str)
 	{
@@ -22,6 +23,7 @@ char *rot13(char *str)
 				break;
 			}
 		}
+	str++;
 	}
-	return (str);
+	return (ptr);
 }
