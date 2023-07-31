@@ -10,12 +10,15 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0, j;
+	unsigned int i = 0, j;
 
 	for(j = 0 ; j < i ; j++)
 	{
-		ptr[j] = accept[j];
+		if (s[j] == accept[j])
+		{
+			i++;
+		}
 	}
 
-	return (ptr);
+	return (i);
 }
