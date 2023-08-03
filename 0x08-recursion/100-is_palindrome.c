@@ -1,41 +1,49 @@
 #include "main.h"
 
 /**
- * rev_string -  a function that reverses sting s in new.
- * @s: string.
- * @new: reversed string s.
+ * _strlen - Returns the length of a string.
+ * @s: The string to be measured.
  *
- * Return: nothing.
+ * Return: The length of the string.
  */
-void rev_string(char *s, char *new)
+int _strlen(char *s)
 {
-        if (*s > '\0')
-        {
-                rev_string(s + 1, new +1);
-		*new = *s;
-        }
+    int length = 0;
+    while (*s != '\0')
+    {
+        length++;
+        s++;
+    }
+    return length;
 }
 
 /**
- * is_palindrome - a function that returns 1 if a
- * string is a palindrome and 0 if not.
- * @s: string.
+ * is_palindrome_helper - Recursive helper function to check if a string is a palindrome.
+ * @s: The string to be checked.
+ * @start: Starting index.
+ * @end: Ending index.
  *
- * Return: returns 1 if a string is a palindrome and 0 if not.
+ * Return: 1 if the string is a palindrome, otherwise 0.
+ */
+int is_palindrome_helper(char *s, int start, int end)
+{
+    if (start >= end)
+        return 1;
+
+    if (s[start] != s[end])
+        return 0;
+
+    return is_palindrome_helper(s, start + 1, end - 1);
+}
+
+/**
+ * is_palindrome - Checks if a string is a palindrome.
+ * @s: The string to be checked.
+ *
+ * Return: 1 if the string is a palindrome, otherwise 0.
  */
 int is_palindrome(char *s)
 {
-	char *new = s;
-	int i;
-	rev_strin(s, new);
-
-	for (i = 0 ; s[i] != '\0' ; i++)
-	{
-		if (s[i] == new[i])
-		{
-			return (1);
-		}
-	}
-	
-	return (0);
+    int len = _strlen(s);
+    return is_palindrome_helper(s, 0, len - 1);
 }
