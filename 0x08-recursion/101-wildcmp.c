@@ -28,14 +28,15 @@ int wildcmp_helper(char *s1, char *s2)
 	{
 		if (*s1 == '\0')
 			return (1);
-		return wildcmp_helper(s1 + 1, s2 + 1);
+		return (wildcmp_helper(s1 + 1, s2 + 1));
 	}
 
 	return (0);
 }
 
 /**
- * wildcmp - compares two strings and returns 1 if they can be considered identical
+ * wildcmp - compares two strings and returns 1
+ * if they can be considered identical
  * @s1: first string
  * @s2: second string with special character *
  *
