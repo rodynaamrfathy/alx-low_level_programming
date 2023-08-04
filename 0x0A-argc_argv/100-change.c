@@ -16,17 +16,14 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		/* Incorrect number of arguments provided */
 		printf("Error\n");
 		return (1);
 	}
 
-	/* Convert the command line argument to an integer */
 	money = atoi(argv[1]);
 
 	if (money < 0)
 	{
-		/* Negative amount provided */
 		printf("0\n");
 		return (0);
 	}
@@ -35,21 +32,14 @@ int main(int argc, char *argv[])
 	{
 		if (money >= cents[i])
 		{
-			/* Calculate the number of coins of the current denomination */
 			leastcents += money / cents[i];
-			/* Update the remaining amount */
 			money %= cents[i];
-
-			/* Check if the remaining amount is 0 */
 			if (money == 0)
 			{
-				/* If the remaining amount is 0, break the loop */
 				break;
 			}
 		}
 	}
-
-	/* Print the minimum number of coins required */
 	printf("%d\n", leastcents);
 
 	return (0);
