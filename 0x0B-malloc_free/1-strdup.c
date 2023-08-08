@@ -30,7 +30,7 @@ char *_strdup(char *str)
 
 	while (i <= size)
 	{
-		*s[i] = *(str + i);
+		s[i] = *(str + i);
 		i++;
 	}
 
