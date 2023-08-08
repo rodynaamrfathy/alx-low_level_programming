@@ -30,16 +30,22 @@ char *str_concat(char *s1, char *s2)
 	if (s == 0)
 		return (NULL);
 
-	while (i < size1)
+	if (s1 != NULL)
 	{
-		s[i] = *(s1 + i);
-		i++;
+		while (i < size1)
+		{
+			s[i] = *(s1 + i);
+			i++;
+		}
 	}
 
-	while (j < size2)
+	if (s2 != NULL)
 	{
-		s[size1 + j] = *(s2 + j);
-		j++;
+		while (j < size2)
+		{
+			s[size1 + j] = *(s2 + j);
+			j++;
+		}
 	}
 
 	s[ts] = '\0';
