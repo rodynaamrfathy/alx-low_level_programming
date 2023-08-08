@@ -3,7 +3,7 @@
 
 /**
  * create_array -  a function that creates an array of chars,
- * and initializes it with a specific char. 
+ * and initializes it with a specific char.
  * @size: array size
  * @c: char.
  *
@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (0);
 	}
-	
+
 	while (size--)
 	{
 		s[size] = c;
