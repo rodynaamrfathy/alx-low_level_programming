@@ -7,7 +7,7 @@
  * @width: no of cloumns
  * @height: no of rows
  *
- * Return: If width or height is 0 or negative, return NULL 
+ * Return: If width or height is 0 or negative, return NULL.
  */
 int **alloc_grid(int width, int height)
 {
@@ -19,7 +19,6 @@ int **alloc_grid(int width, int height)
 	}
 
 	new = (int **)malloc(height * sizeof(int *));
-	
 	for ( ; i < height ; i++)
 	{
 		new[i] = (int *)malloc(width * sizeof(int));
@@ -30,5 +29,11 @@ int **alloc_grid(int width, int height)
 	}
 
 	return (new);
+
+	for (i = 0; i < height ; i++)
+	{
+		free(new[i]);
+	}
+	free(new);
 
 }
