@@ -3,6 +3,8 @@
 #include "variadic_functions.h"
 /**
  * print_char - prints a char.
+ * @separation: separation
+ * @ap: list.
  *
  * Return: nothing
  */
@@ -13,6 +15,8 @@ void print_char(char *separation, va_list ap)
 
 /**
  * print_int - prrints an int.
+ * @separation: separation
+ * @ap: list.
  *
  * Return: nothing
  */
@@ -23,6 +27,8 @@ void print_int(char *separation, va_list ap)
 
 /**
  * print_float - prints a float.
+ * @separation: separation
+ * @ap: list.
  *
  * Return: nothing
  */
@@ -41,6 +47,7 @@ void print_float(char *separation, va_list ap)
 void print_string(char *separation, va_list ap)
 {
 	char *str = va_arg(ap, char *);
+
 	switch ((int)(!str))
 	{
 	case 1:
