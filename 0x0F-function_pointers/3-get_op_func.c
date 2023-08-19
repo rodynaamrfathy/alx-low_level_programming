@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * get_op_func - function that selects the
@@ -19,9 +20,9 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < 5)
+	while (ops[i].op != NULL)
 	{
-		if (s && s[0] == ops[i].op[0] && !s[1])
+		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
 		i++;
 	}
