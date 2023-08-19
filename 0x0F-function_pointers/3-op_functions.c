@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 /**
- * op_add -  returns the sum of a and b. 
+ * op_add -  returns the sum of a and b.
  * @a: int.
  * @b: int.
  *
@@ -43,7 +43,7 @@ int op_mul(int a, int b)
  *
  * Return: returns the result of the division of a by b.
  */
- int op_div(int a, int b)
+int op_div(int a, int b)
 {
 	return (a / b);
 }
