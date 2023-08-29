@@ -3,7 +3,7 @@
 /**
  * listint_len - a function that returns the number of
  * elements in a linked listint_t list.
- * h: head of singly linked list.
+ * @h: head of singly linked list.
  *
  * Return: number of elements in a linked.
  */
