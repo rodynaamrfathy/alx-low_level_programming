@@ -9,12 +9,13 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *pop; 
+	int n;
 
-	pop = malloc(sizeof(listint_t));
 	if (!head)
 		return (0);
-	pop->next = (*head)->next;
-	pop->n = (*head)->next;
+	pop = (*head)->next; /*get adress of head then el next bt3ha*/
+	n = (*head)->n;
 	free(*head);
-	return (pop->n);
+	*head = pop;
+	return (n);
 }
