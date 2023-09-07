@@ -22,12 +22,12 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	w = write(fd, text_content, bytes);
-	fd = chmod(filename, S_IRUSR | S_IWUSR | S_IRGRP |S_IWGRP | S_IROTH);
+	fd = chmod(filename, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (w == -1 || fd == -1)
 	{
 		close(fd);
 		return (-1);
 	}
 	close(fd);
-	return (1);i
+	return (1);
 }
