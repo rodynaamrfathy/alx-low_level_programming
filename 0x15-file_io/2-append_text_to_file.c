@@ -11,7 +11,7 @@ int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	int bytes = (text_content != NULL) ? strlen(text_content) : 0;
-       	int w;
+	int w;
 
 	if (!filename)
 		return (-1);
@@ -22,17 +22,12 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	w = write(fd, text_content, bytes);
-	if (w == -1)
-	{
-		close(fd);
-		return (-1);
-	}
-	if (chmod(filename, S_IRUSR | S_IWUSR | S_IRGRP |
-				S_IWGRP | S_IROTH) == -1)
+	fd = chmod(filename, S_IRUSR | S_IWUSR | S_IRGRP |S_IWGRP | S_IROTH);
+	if (w == -1 || fd == -1)
 	{
 		close(fd);
 		return (-1);
 	}
 	close(fd);
-	return (1);
+	return (1);i
 }
