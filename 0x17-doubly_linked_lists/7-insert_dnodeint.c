@@ -7,7 +7,7 @@
  *
  * Return: the number of nodes.
  */
-unsigned int dlistint_len(const dlistint_t *h)
+unsigned int dlist_len(const dlistint_t *h)
 {
 	unsigned int list_len = 0;
 
@@ -39,7 +39,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 
 	current = *h;
-	list_len = dlistint_len(current);
+	list_len = dlist_len(current);
 
 	if (idx == 0)
 	{
