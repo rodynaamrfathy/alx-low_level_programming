@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * dlistint_len - a function that counts all the elements of a dlistint_t list.
+ * dlist_len - a function that counts all the elements of a dlistint_t list.
  * @h: head of a doubly linked list
  *
  * Return: the number of nodes.
