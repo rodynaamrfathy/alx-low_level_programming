@@ -49,11 +49,6 @@ int mult(int a, int b)
  */
 int divison(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("not valid\n");
-		return (0);
-	}
 	return (a / b);
 }
 
@@ -66,10 +61,5 @@ int divison(int a, int b)
  */
 int mod(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("not valid\n");
-		return (0);
-	}
 	return (a % b);
 }
