@@ -1,5 +1,8 @@
-#include <stdlib.h>
-#include <stdio.h>
+int add(int a, int b);
+int sub(int a, int b);
+int mult(int a, int b);
+int divison(int a, int b);
+int mod(int a, int b);
 
 /**
  * add - substract two numbers
