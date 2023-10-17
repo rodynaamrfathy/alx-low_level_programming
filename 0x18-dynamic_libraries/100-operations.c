@@ -1,65 +1,65 @@
-int add(int a, int b);
-int sub(int a, int b);
-int mult(int a, int b);
-int divison(int a, int b);
-int mod(int a, int b);
+int add(int i, int k);
+int sub(int i, int k);
+int mul(int i, int k);
+int div(int i, int k);
+int mod(int i, int k);
 
 /**
- * add - substract two numbers
- * @a: int
- * @b: int
- *
- * Return: a + b.
- */
-int add(int a, int b)
+* add - adds two integers
+* @i: first integer to add
+* @k: second integer to add
+* Return: the sum
+*/
+
+int add(int i, int k)
 {
-	return (a + b);
+	return (i + k);
 }
 
 /**
- * sub - substract two numbers
- * @a: int
- * @b: int
- *
- * Return: a - b.
- */
-int sub(int a, int b)
+* sub - subtracts two integers
+* @i: first integer to add
+* @k: second integer to add
+* Return: the subtract
+*/
+
+int sub(int i, int k)
 {
-	return (a - b);
+	return (i - k);
 }
 
 /**
- * mult - substract two numbers
- * @a: int
- * @b: int
- *
- * Return: a x b.
- */
-int mult(int a, int b)
+* mul - multiplies two integers
+* @i: first integer to add
+* @k: second integer to add
+* Return: the multiple
+*/
+
+int mul(int i, int k)
 {
-	return (a * b);
+	return (i * k);
 }
 
 /**
- * divison - substract two numbers
- * @a: int
- * @b: int
- *
- * Return: a / b.
- */
-int divison(int a, int b)
+* div - divideds two integers
+* @i: first integer to add
+* @k: second integer to add
+* Return: the dividend integer
+*/
+
+int div(int i, int k)
 {
-	return (a / b);
+	return (i / k);
 }
 
 /**
- * mod - substract two numbers
- * @a: int
- * @b: int
- *
- * Return: a % b.
- */
-int mod(int a, int b)
+  mod - finds the modulus of two integers
+  @i: first integer to add
+  @k: second integer to add
+  Return: the modulus
+*/
+
+int mod(int i, int k)
 {
-	return (a % b);
+	return (i % k);
 }
