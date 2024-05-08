@@ -1,58 +1,61 @@
 #include "search_algos.h"
-#include <stdio.h>
 
 /**
- * print_array - prints the elements of an array
+ * recursive_search - searches for a value in an array of
+ * integers using the Binary search algorithm
  *
- * @array: pointer to the array
- * @low: starting index of the sub-array
- * @high: ending index of the sub-array
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
-void print_array(int *array, int low, int high)
+int recursive_search(int *array, size_t size, int value)
 {
-    int size = high - low + 1;
-    for (int i = 0; i < size; i++)
-    {
-        printf("%d ", array[i]);
-    }
-    printf("\n");
+	size_t half = size / 2;
+	size_t i;
+
+	if (array == NULL || size == 0)
+		return (-1);
+
+	printf("Searching in array");
+
+	for (i = 0; i < size; i++)
+		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
+
+	printf("\n");
+
+	if (half && size % 2 == 0)
+		half--;
+
+	if (value == array[half])
+		return ((int)half);
+
+	if (value < array[half])
+		return (recursive_search(array, half, value));
+
+	half++;
+
+	return (recursive_search(array + half, size - half, value) + half);
 }
 
 /**
- * binary_search - searches for a value in a sorted array using binary search
+ * binary_search - calls to binary_search to return
+ * the index of the number
  *
- * @array: pointer to the sorted array
+ * @array: input array
  * @size: size of the array
- * @value: value to search for
- *
- * Return: index of the value if found, otherwise -1
+ * @value: value to search in
+ * Return: index of the number
  */
 int binary_search(int *array, size_t size, int value)
 {
-    if (array == NULL || size == 0)
-    {
-        return (-1);
-    }
+	int index;
 
-    int low = 0, high = size - 1;
+	index = recursive_search(array, size, value);
 
-    while (low <= high)
-    {
-        int mid = (high + low) / 2;
-        print_array(array + low, 0, high - low);
-        if (value == array[mid])
-        {
-            return mid;
-        }
-        else if (value > array[mid])
-        {
-            low = mid + 1;
-        }
-        else if (value < array[mid])
-        {
-            high = mid - 1;
-        }
-    }
+	if (index >= 0 && array[index] != value)
+		return (-1);
 
-    return (-1);
+	return (index);
 }
